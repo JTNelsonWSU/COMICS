@@ -5,7 +5,7 @@ A pipeline for identifying outlier loci from multiple selection scans.
 ## Installing Dependencies
 
 COMICS relies on several dependencies:
-    install.packages(c("shiny", "mvtnorm", "ICS", "moments", "ICSOutlier", "ggplot2", "reshape", "shinythemes"), dependencies = TRUE)
+    `install.packages(c("shiny", "mvtnorm", "ICS", "moments", "ICSOutlier", "ggplot2", "reshape", "shinythemes"), dependencies = TRUE)`
 
 Users may also need to install additional tools for a more efficient ues of COMICS. See:  https://www.rstudio.com/products/rpackages/devtools/
 
@@ -14,10 +14,10 @@ Users may also need to install additional tools for a more efficient ues of COMI
 There are two R-scripts that make up COMICS. The first script contains code that designs the user interface for COMICS, otherwise known as the fluid page. -> COMICS.design.R. The second script includes the input of the data and invokes the ICS and figure generation.
 
 For COMICS istallation after dependencies are downloaded
-    install.packages("devtools", dependencies = TRUE)
+    `install.packages("devtools", dependencies = TRUE)
     devtools::install_github("JTNelsonWSU/shiny-app", build_vignettes = TRUE)
     libraray(shiny-app)
-    shiny-app()
+    shiny-app()`
    
 ## Input Files
 
