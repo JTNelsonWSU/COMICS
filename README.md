@@ -9,7 +9,7 @@ COMICS relies on several dependencies:
 
 Users may also need to install additional tools for a more efficient ues of COMICS. See:  https://www.rstudio.com/products/rpackages/devtools/
 
-##Installing COMICS
+###Installing COMICS
 
 There are two R-scripts that make up COMICS. The first script contains code that designs the user interface for COMICS, otherwise known as the fluid page. -> COMICS.design.R. The second script includes the input of the data and invokes the ICS and figure generation.
 
@@ -19,7 +19,7 @@ For COMICS istallation after dependencies are downloaded
     libraray(shiny-app)
     shiny-app()
    
-##Input Files
+###Input Files
 
 COMICS incorperates the use of two different input files, both of which are necessary for the complete use of the package. See the example input files for more information about the format of the two files.
 
