@@ -1,5 +1,5 @@
 
-#This script is the core script for shiny that first calls "shiny.design.R"(the UI) which creates a fluid user interface, then performs the server function. 
+#This script is the core script for shiny that first calls "COMICS.fluid.R" which creates a fluid user interface, then performs the server function. 
 
 library(shiny)   # Loads shiny package.
 library(mvtnorm) # Loads the Multivariate Normal and t Distribution package.
