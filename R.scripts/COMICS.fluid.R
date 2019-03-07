@@ -1,6 +1,6 @@
 
 
-####### This script is responsible for the C.O.M.I.C.S app design and all input/output types, including location on the interface.
+####### This script is responsible for the COMICS app design and all input/output types, including location on the interface.
 
 ui <- fluidPage(      # Tells shiny that the webpage is not going to be static/fixed
   theme = shinytheme("superhero"),
