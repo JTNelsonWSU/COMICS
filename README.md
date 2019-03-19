@@ -23,6 +23,8 @@ For COMICS istallation after dependencies are downloaded:
  `libraray(shiny-app)`
  
 `shiny-app()`
+
+If the above installation does not work, the base COMICS scripts can be downloaded from /scripts from this repository.
    
 ## Input Files
 
