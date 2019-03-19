@@ -18,11 +18,13 @@ For COMICS istallation after dependencies are downloaded:
 
 `install.packages("devtools", dependencies = TRUE)`
  
-`devtools::install_github("JTNelsonWSU/shiny-app", build_vignettes = TRUE)`
+ `library(devtools)`
  
- `libraray(shiny-app)`
+`devtools::install_github("JTNelsonWSU/COMICS", build_vignettes = TRUE)`
  
-`shiny-app()`
+ `library(COMICS)`
+ 
+`COMICS()`
 
 If the above installation does not work, the base COMICS scripts can be downloaded from /scripts from this repository.
    
