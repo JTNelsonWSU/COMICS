@@ -1,5 +1,5 @@
-# shiny-app C.O.M.I.C.S
-Calling Outlier loci from Multi-dimensional data using Invariant Coordinate Selection
+# shiny-app C.O.M.I.C.S.
+Calling Outlier loci from Multi-dimensional data using Invariant Coordinate Selection.
 A pipeline for identifying outlier loci from multiple selection scans.
 # Using COMICS
 ## Installing Dependencies
