@@ -5,6 +5,8 @@ A pipeline for identifying outlier loci from multiple selection scans.
 ## Installing Dependencies
 
 COMICS relies on several dependencies:
+It is important to note that COMICS can only be applied to R Studios and not the base R console. 
+For R Studios visit: https://rstudio.com/products/rstudio/download/
 
 `install.packages(c("shiny", "mvtnorm", "ICS", "moments", "ICSOutlier", "ggplot2", "reshape", "shinythemes"), dependencies = TRUE)`
 
@@ -16,7 +18,7 @@ There are two R-scripts that make up COMICS. The first script contains code that
 
 For COMICS istallation after dependencies are downloaded:
 
-`install.packages("devtools", dependencies = TRUE)`
+`install.packages("devtools", dependencies = FALSE)`
  
  `library(devtools)`
  
@@ -24,7 +26,7 @@ For COMICS istallation after dependencies are downloaded:
  
  `library(COMICS)`
  
-`COMICS()`
+`launchApp()`
 
 If the above installation does not work, the base COMICS scripts can be downloaded from /scripts from this repository.
    
