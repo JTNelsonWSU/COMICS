@@ -18,11 +18,11 @@ There are two R-scripts that make up COMICS. The first script contains code that
 
 For COMICS istallation after dependencies are downloaded:
 
-`install.packages("devtools", dependencies = FALSE)`
+`install.packages("devtools", dependencies = TRUE)`
  
  `library(devtools)`
  
-`devtools::install_github("JTNelsonWSU/COMICS", build_vignettes = TRUE)`
+`devtools::install_github("JTNelsonWSU/COMICS", build_vignettes = FALSE)`
  
  `library(COMICS)`
  
