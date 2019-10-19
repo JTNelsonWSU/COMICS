@@ -4,7 +4,7 @@
 
 ui <- fluidPage(      # Tells shiny that the webpage is not going to be static/fixed
   #theme = shinythemes("superhero"),
-  titlePanel("Thanks for using C.O.M.I.C.S"),  # Adds a main title to the webpage
+  titlePanel("Thanks for using C.O.M.I.C.S."),  # Adds a main title to the webpage
   sidebarLayout(   # Edits the side bar of the webpage
     sidebarPanel(   # Edits the panel of the sidebar 
        fileInput(inputId = "file1", label = "Data file",   # Adds an inputfile. Name of the inputID is "file1". This file will contain the information to run the ICS.
