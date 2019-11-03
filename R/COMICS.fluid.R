@@ -21,7 +21,9 @@ ui <- fluidPage(      # Tells shiny that the webpage is not going to be static/f
        numericInput("TestOfInterest", label = "Test of interest", value = 1, min = 0, max = 100), # Inputs a numerical option that makes a plot for the single selection test selected. 
        # This input uses data from the original input file "file1" and does not include ICS results.
        numericInput("Chromosomes", label = "Chromosome of interest", value = 1, min = 0, max = "configuration"), # Inputs a numerical value that makes a histogram for any given chromosome selected.
-       # This input uses data from the final ICS calculation.
+       numericInput("First.Index", label = "First Index", value = 1, min = 1, max = 100), # Inputs a numerical value that makes a histogram for any given chromosome selected.
+       numericInput("Second.Index", label = "Second Index", value = 1, min = 1, max = 100), # Inputs a numerical value that makes a histogram for any given chromosome selected.
+
 
       downloadButton("downloadData", "Download ICS output"), # Makes the download button.
       downloadButton("downloadPlot", "Download ICS figure") # Makes the download button.
