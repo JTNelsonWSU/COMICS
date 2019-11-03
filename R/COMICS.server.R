@@ -30,7 +30,7 @@ server <- function(input, output) {  # Calls the shiny server. From hearafter, a
     TestXF <- data.1[,2 + TestX]  # Creats a new variable that tells the server which selection test to graph.
     
     output$GenomeTest <- renderPlot({   # The following code uses ggplot2 to construct/render a scatter plot for a individual selection test (pre-ICS data). This plot is called "GenomeTest" in the UI.
-      ggplot(data = data.1, aes(x = data.1$Midpoint, y = TestXF)) + geom_point(size=1.0, aes(colour = factor(Chrom))) + 
+      ggplot(data = data.1, aes(x = data.1$Midpoint, y = TestXF)) + geom_point(size=1.0, aes(colour = Chrom)) + 
         theme(axis.text.x= element_text(size = rel(1.1), hjust = 1, vjust = 1)) + ylab(expression(test_statistic)) + 
         xlab(expression(Position(bp))) + guides(colour=FALSE) + ggtitle("Test of interest") +
         theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) +
@@ -47,7 +47,7 @@ server <- function(input, output) {  # Calls the shiny server. From hearafter, a
   data.1.melt <- melt(data.1, id.vars = c("Midpoint", "Chrom"), measure.vars = data.1.name) # data.1 is melted by test name and identified by the "Midpoint" and "Chrom" columns. 
     
     output$GenomeMelt <- renderPlot({   # The following code uses ggplot2 to construct/render a melted scatter plot for all selection test (pre-ICS data) individually. This plot is called "GenomeMelt" in the UI. Also not the "free_scale" flag accounting for different test statistics. 
-      ggplot(data = data.1.melt, aes(x = Midpoint, y = value )) + geom_point(size=1.0, aes(colour = factor(Chrom))) + 
+      ggplot(data = data.1.melt, aes(x = Midpoint, y = value )) + geom_point(size=1.0, aes(colour = Chrom)) + 
       theme(axis.text.x= element_text(size = rel(1.1), hjust = 1, vjust = 1)) + ylab(expression(test_statistic)) + 
       xlab(expression(Position(bp))) + guides(colour=FALSE) + ggtitle("Individual Selection Scans") +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) +
