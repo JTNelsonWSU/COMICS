@@ -87,10 +87,12 @@ server <- function(input, output) {  # Calls the shiny server. From hearafter, a
     
 
 ########Start ICS############
+    index.first <- input$First.Index
+    index.second <- input$Second.Index
     X[,1:2] <- NULL  # Removes the first 2 columns in the file (prepares file for ICS).
     Z <- ics2(X)  # Performs ICS on object "X" and saves it as a new object, "Z".
     Z_comp <- comp.norm.test(Z) # Identifies invariant coordinates that are non normal using univariate normality tests and saves it as "Z_comp".
-    Z_dist <- ics.distances(Z) # Computes the squared ICS distances and saves it as "Z_dist".
+    Z_dist <- ics.distances(Z,index = index.first:index.second) # Computes the squared ICS distances and saves it as "Z_dist".
     Z_frame <- data.frame(Z_dist) # Makes the ICS distance a data frame, "Z_frame".
     #icsOutlierJB <- ics.outlier(Z, test = "jarque", level.dist = 0.05, level.test = 0.05, mDist = 100) # Identifies outliers based on the two scatter matrices using the Jarque Test. Creats a new variable called "icsOutliersJB".
     #icsOutlierAG <- ics.outlier(Z, test = "anscombe", level.dist = 0.05, level.test = 0.05, mDist = 100) # Identifies outliers based on the two scatter matrices using the Anscombe Test. Creates a new variable called "icsOutliersAG".
