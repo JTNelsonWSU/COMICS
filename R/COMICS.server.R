@@ -1,12 +1,7 @@
 
 #This script is the core script for shiny that first calls "shiny.design.R"(the UI) which creates a fluid user interface, then performs the server function. 
 
-library(shiny)   # Loads shiny package.
-library(mvtnorm) # Loads the Multivariate Normal and t Distribution package.
-library(ICS)     # Loads the ICS package.
-library(moments) # Loads the momment (Distribution moments) package.
-library(ICSOutlier) # Loads a sepeerate ICS package that calls outliers from the ICS.
-library(shinythemes)
+
 
 #source("COMICS.fluid.R")   # Calls the "shiny.design.R" script to create/design the user interface 
 # for more information, look at "shiny.design.R" annotation.
@@ -15,6 +10,12 @@ server <- function(input, output) {  # Calls the shiny server. From hearafter, a
 
 library(ggplot2) # Loads ggplot 2 for figure design.
 library(reshape2) # Loads the reshape package for melting data.
+library(shiny)   # Loads shiny package.
+library(mvtnorm) # Loads the Multivariate Normal and t Distribution package.
+library(ICS)     # Loads the ICS package.
+library(moments) # Loads the momment (Distribution moments) package.
+library(ICSOutlier) # Loads a sepeerate ICS package that calls outliers from the ICS.
+library(shinythemes) # Loads theme for shiny (not in current version)
  
   observe({    # Creates a "reactive" environment that can read reactive values and expressions. Importantly, the "observe" expression will automatically re-execute when dependencies are changed. 
       
