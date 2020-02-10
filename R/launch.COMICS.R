@@ -4,7 +4,15 @@
 
 #' @return shiny application object
 
-#' @import shiny
+#' @importFrom shiny runApp
+# @import mvtnorm
+# @import ICS
+# @import moments
+# @import ICSOutlier
+# @import ggplot2
+# @import reshape2
+# @import shinythemes
+
 
 #'
 
