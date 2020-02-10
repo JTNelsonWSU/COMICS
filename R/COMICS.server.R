@@ -6,8 +6,6 @@ library(mvtnorm) # Loads the Multivariate Normal and t Distribution package.
 library(ICS)     # Loads the ICS package.
 library(moments) # Loads the momment (Distribution moments) package.
 library(ICSOutlier) # Loads a sepeerate ICS package that calls outliers from the ICS.
-library(ggplot2) # Loads ggplot 2 for figure design.
-library(reshape2) # Loads the reshape package for melting data.
 library(shinythemes)
 
 #source("COMICS.fluid.R")   # Calls the "shiny.design.R" script to create/design the user interface 
@@ -15,6 +13,8 @@ library(shinythemes)
 
 server <- function(input, output) {  # Calls the shiny server. From hearafter, all R code focues on "actions and functions" and do not pertain to the design of the app. 
 
+library(ggplot2) # Loads ggplot 2 for figure design.
+library(reshape2) # Loads the reshape package for melting data.
  
   observe({    # Creates a "reactive" environment that can read reactive values and expressions. Importantly, the "observe" expression will automatically re-execute when dependencies are changed. 
       
