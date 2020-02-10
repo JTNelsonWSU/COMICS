@@ -5,6 +5,7 @@
 #' @return shiny application object
 
 #' @import shiny
+#' @import reshape2
 
 #'
 
